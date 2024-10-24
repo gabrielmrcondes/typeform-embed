@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed Typeform</title>
+    <script src="https://embed.typeform.com/embed.js"></script>
+</head>
+<body>
+    <div id="typeform-embed"></div>
+    <script>
+        // Configurar o Typeform
+        const typeformEmbed = document.getElementById('typeform-embed');
+        window.tf.createWidget(typeformEmbed, {
+            url: 'https://ingressesurvey.typeform.com/to/gfOxrIFg',
+            hideHeaders: true,
+            hideFooter: true,
+            onClose: function() {
+                // Opcional: o que fazer quando o formulário for fechado
+                console.log("Typeform fechado");
+            }
+        });
+    </script>
+</body>
+</html>
