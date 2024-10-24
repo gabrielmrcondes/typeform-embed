@@ -9,16 +9,10 @@
 <body>
     <div id="typeform-embed"></div>
     <script>
-        // Configurar o Typeform
-        const typeformEmbed = document.getElementById('typeform-embed');
-        window.tf.createWidget(typeformEmbed, {
-            url: 'https://ingressesurvey.typeform.com/to/gfOxrIFg',
+        window.tf.createWidget(document.getElementById('typeform-embed'), {
+            url: 'https://ingressesurvey.typeform.com/to/gfOxrIFg',  // Link do seu formulário
             hideHeaders: true,
             hideFooter: true,
-            onClose: function() {
-                // Opcional: o que fazer quando o formulário for fechado
-                console.log("Typeform fechado");
-            }
         });
     </script>
 </body>
